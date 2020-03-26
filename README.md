@@ -6,7 +6,7 @@
 * [Screenshots](#screenshots)
 
 # General info
-The first application based on SCRUM methodology and JavaScript technology created by: Piotr Sitarek, Edyta Pawelska, Błażej Bałruszewicz. We had just 5 days to write this application. We made all the 'must have' tasks and a few 'should have'. I think that we have learned a lot during these days and we perform very well.
+The first application based on SCRUM methodology and JavaScript technology created by: [Piotr Sitarek](https://github.com/PiotrSitarek), [Edyta Pawelska](https://github.com/edyta1pawelska), [Błażej Bałruszewicz](https://github.com/Buashei). We had just 5 days to write this application. We made all the 'must have' tasks and a few 'should have'. I think that we have learned a lot during these days and we perform very well.
 
 The assumptions of the application are:
 * recipe creation
