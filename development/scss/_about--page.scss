@@ -1,0 +1,57 @@
+.about--page {
+    display: flex;
+    align-items: center;
+    height: 541px;
+    background: $color__background;
+
+    .container {
+
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .col-4 {
+                text-align: center;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 50px;
+                color: $color__header;
+
+                p:first-of-type {
+                    font-size: 2.3rem;
+                    color: $color__rowicon;
+
+                }
+
+                p:nth-of-type(2) {
+                    font-size: 1.2rem;
+                    color: $color__rowicon;
+
+                }
+
+                .fas.fa-check {
+                    font-size: xx-large;
+                    color: $color__rowicon;
+                }
+
+                .far.fa-clock {
+                    font-size: xx-large;
+                    color: $color__rowicon;
+                }
+
+                .fas.fa-list {
+                    font-size: xx-large;
+                    color: $color__rowicon;
+                }
+
+            }
+
+        }
+
+    }
+}

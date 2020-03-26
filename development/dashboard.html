@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Zaplanuj Jedzonko</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="container row">
+      <h1 class="col-4">
+        <span class="first">Zaplanuj</span>
+        <span class="second">Jedzonko</span>
+      </h1>
+      <div class="name col-3">
+        <p class="nameInfo">Imię</p>
+        <i class="fas fa-user-circle"></i>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <aside class="col-2">
+          <ul>
+            <li><a href="dashboard.html" class="app activeApp">Pulpit</a></li>
+            <li><a href="recipes.html" class="app">Przepisy</a></li>
+            <li><a href="schedules.html" class="app">Plany</a></li>
+          </ul>
+        </aside>
+        <section class="col-10">
+          <div class="container dashboard">
+            <div class="row widgetFirst">
+              <div class="col-2 addButton" id="addRecipesWidget"><i class="far fa-plus-square"></i>
+                <p>dodaj przepis</p>
+              </div>
+              <div class="col-2 addButton" id="addPlansWidget"><i class="far fa-plus-square"></i>
+                <p>dodaj plan</p>
+              </div>
+              <div class="col-7 widgetStripes">
+                <div class="row col-12 widgetRecipes"><i class="fas fa-info-circle"></i>
+                  <p id="widgetRecipesAmount"></p><i class="fas fa-window-close"></i>
+                </div>
+                <div class="row col-12 widgetPlans"><i class="fas fa-exclamation-circle"></i>
+                  <p>Pamiętaj, aby dodać plan!</p><i class="fas fa-window-close"></i>
+                </div>
+                <div class="row col-12 widgetHello"><i class="fas fa-check-circle"></i>
+                  <p>Świetnie że jesteś! Udanego planowania i smaczego! :)</p><i class="fas fa-window-close"></i>
+                </div>
+              </div>
+            </div>
+            <div class="row widgetWeekPlan">
+              <div class="col-12 yourPlanNumber" id="weekNumber">Proszę, uzupełnij swoje plany. </div>
+              <div class="col-12 weekTable">
+                <table class="tg">
+                  <tr>
+                    <th class="tg-0lax">Poniedziałek</th>
+                    <th class="tg-0lax">Wtorek</th>
+                    <th class="tg-0lax">Środa</th>
+                    <th class="tg-0lax">Czwartek</th>
+                    <th class="tg-0lax">Piątek</th>
+                    <th class="tg-0lax">Sobota</th>
+                    <th class="tg-0lax">Niedziela</th>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" id="mondayBreakfast">sniadanie</td>
+                    <td class="tg-0lax" id="tuesdayBreakfast">sniadanie</td>
+                    <td class="tg-0lax" id="wednesdayBreakfast">sniadanie</td>
+                    <td class="tg-0lax" id="thursdayBreakfast">sniadanie</td>
+                    <td class="tg-0lax" id="fridayBreakfast">sniadanie</td>
+                    <td class="tg-0lax" id="saturdayBreakfast">sniadanie</td>
+                    <td class="tg-0lax" id="sundayBreakfast">sniadanie</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" id="mondaySecBreakfast">drugie sniadanie</td>
+                    <td class="tg-0lax" id="tuesdaySecBreakfast">drugie sniadanie</td>
+                    <td class="tg-0lax" id="wednesdaySecBreakfast">drugie sniadanie</td>
+                    <td class="tg-0lax" id="thursdaySecBreakfast">drugie sniadanie</td>
+                    <td class="tg-0lax" id="fridaySecBreakfast">drugie sniadanie</td>
+                    <td class="tg-0lax" id="saturdaySecBreakfast">drugie sniadanie</td>
+                    <td class="tg-0lax" id="sundaySecBreakfast">drugie sniadanie</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" id="mondaySoup">zupa</td>
+                    <td class="tg-0lax" id="tuesdaySoup">zupa</td>
+                    <td class="tg-0lax" id="wednesdaySoup">zupa</td>
+                    <td class="tg-0lax" id="thursdaySoup">zupa</td>
+                    <td class="tg-0lax" id="fridaySoup">zupa</td>
+                    <td class="tg-0lax" id="saturdaySoup">zupa</td>
+                    <td class="tg-0lax" id="sundaySoup">zupa</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" id="mondayMainCourse">drugie danie</td>
+                    <td class="tg-0lax" id="tuesdayMainCourse">drugie danie</td>
+                    <td class="tg-0lax" id="wednesdayMainCourse">drugie danie</td>
+                    <td class="tg-0lax" id="thursdayMainCourse">drugie danie</td>
+                    <td class="tg-0lax" id="fridayMainCourse">drugie danie</td>
+                    <td class="tg-0lax" id="saturdayMainCourse">drugie danie</td>
+                    <td class="tg-0lax" id="sundayMainCourse">drugie danie</td>
+                  </tr>
+                  <tr>
+                    <td class="tg-0lax" id="mondaySupper">kolacja</td>
+                    <td class="tg-0lax" id="tuesdaySupper">kolacja</td>
+                    <td class="tg-0lax" id="wednesdaySupper">kolacja</td>
+                    <td class="tg-0lax" id="thursdaySupper">kolacja</td>
+                    <td class="tg-0lax" id="fridaySupper">kolacja</td>
+                    <td class="tg-0lax" id="saturdaySupper">kolacja</td>
+                    <td class="tg-0lax" id="sundaySupper">kolacja</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="col-12 weekTableControls">
+                <div class="moveLeft"><i class="fas fa-angle-double-left"></i>poprzedni</div>
+                <div class="moveRight">następny<i class="fas fa-angle-double-right"></i></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <script src="./js/dashboard.js"></script>
+</body>
+
+</html>

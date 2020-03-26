@@ -1,0 +1,123 @@
+.weeks {
+  height: 750px;
+  width: 100%;
+
+  .container {
+    height: 100%;
+    width: 100%;
+
+    .row {
+      height: 100%;
+      width: 100%;
+      display: flex;
+
+      .col-12 {
+        height: 100%;
+        display: flex;
+
+        .week {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          border: 2px dotted $color__rowicon;
+          background-color: $color__background;
+          margin-top: 30px;
+
+          .week--plan {
+            height: 90px;
+            display: flex;
+            font-size: 2rem;
+            color: $color__icon;
+            align-items: center;
+
+            p {
+              display: block;
+            }
+          }
+
+          .table {
+            display: flex;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+
+
+            .table--plan {
+              display: block;
+              width: 95%;
+
+
+              thead {
+                font-size: 2rem;
+                font-weight: bold;
+                color: $color__aside;
+                width: 100%;
+              }
+
+              tr {
+                height: 90px;
+              }
+
+              tbody {
+                font-size: 2rem;
+                font-weight: normal;
+                //color: $color__aside;
+                color: $color__rowicon;
+              }
+
+              th,
+              td {
+                border-bottom: 1px solid $color__rowicon;
+                padding: 10px;
+              }
+            }
+          }
+
+          .all__buttons {
+            height: 80px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .prev {
+              display: flex;
+
+              .fa-angle-double-left {
+                display: block;
+                color: $color__button;
+                font-size: 50px;
+              }
+
+              .button--weeks {
+                color: $color__button;
+                background-color: #FFFFFA;
+                padding: 0;
+              }
+            }
+
+            .next {
+              font-size: 50px;
+              display: flex;
+
+              .fa-angle-double-right {
+                display: block;
+                color: $color__button;
+                font-size: 50px;
+              }
+
+              .button--weeks {
+                color: $color__button;
+                background-color: #FFFFFA;
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

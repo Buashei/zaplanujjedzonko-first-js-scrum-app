@@ -1,0 +1,22 @@
+.newsletter {
+    background-color: $color__aside;
+
+    form {
+        display: flex; 
+        height: 55px;
+        input {
+            border: none;
+            width: 300px;
+        }
+    }
+}
+
+.newsletter>.container {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+}

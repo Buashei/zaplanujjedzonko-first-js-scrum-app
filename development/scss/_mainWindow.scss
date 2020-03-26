@@ -1,0 +1,25 @@
+.mainWindow {
+    background-color: $color__background;
+    border: $color__aside 1px dashed;
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
+
+.mainWindow {
+    p {
+        font-size: 30px;
+        color: $color__button;
+    }
+}

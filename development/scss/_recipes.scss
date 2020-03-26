@@ -1,0 +1,98 @@
+.recipes {
+    width: 100%;
+    height: 100%;
+    padding: 4vh;
+    background: $color__background;
+    border: 1px dashed $color__aside;
+
+    hr {
+        margin: 10px 0;
+        border: none;
+        border-top: 1px solid $color__aside;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .row:nth-of-type(1) {
+        display: flex;
+        justify-content: space-between;
+
+        >.col-4 {
+            text-transform: uppercase;
+            font-size: 2rem;
+            color: $color__button;
+        }
+
+        >.col-2 {
+            >button {
+                height: 40px;
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+    .col-5:first-of-type {
+        margin-right: 15%;
+    }
+
+    label {
+        font-size: 1.5rem;
+        color: $color__aside;
+        margin-bottom: 10px;
+    }
+
+    .txtarea {
+        display: flex;
+        align-items: center;
+        input{
+            width: 85%;
+            height: 2rem;
+            padding: 5px;
+        }
+    }
+    
+
+    input {
+        display: flex;
+        align-items: center;
+    }
+
+    input[name="name"] {
+        margin-bottom: 10px;
+        width: 92%;
+        height: 2rem;
+        padding: 5px;
+    }
+    textarea[name="opis"]{
+        margin-bottom: 10px;
+        width: 92%;
+        max-width: 92%;
+        height: 5rem;
+        resize:none;
+    }
+
+    .fa-plus-square {
+        font-size: 2rem;
+        margin-left: 30px;
+        color: $color__message--success;
+    }
+
+    ul {
+        margin-top: 20px;
+        height: 200px;
+        overflow: auto;
+        list-style-position: inside;
+        list-style-type: decimal;
+        word-wrap: break-word;
+    }
+
+    .fa-edit {
+        color: $color__massage--warning;
+    }
+
+    .fa-trash-alt {
+        color: $color__icon;
+    }
+}

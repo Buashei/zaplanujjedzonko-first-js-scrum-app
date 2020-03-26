@@ -1,0 +1,82 @@
+header {
+    height: 80px;
+
+    .name {
+        display: flex;
+        align-items: center;
+        color: white;
+
+        .fa-user-circle {
+            font-size: 50px;
+            margin-left: 20px;
+            color: $color__button;
+        }
+    }
+}
+
+main {
+    .container {
+        max-width: 100%;
+    }
+
+    aside {
+        height: calc(100vh - 80px);
+
+        background: $color__aside;
+
+        ul {
+            list-style: none;
+
+            a {
+                display: block;
+                font-size: 1.5rem;
+                line-height: 75px;
+                text-decoration: none;
+                padding-left: 20px;
+                color: white;
+            }
+        }
+    }
+
+    section {
+        padding: 2.9rem 4.3rem;
+        height: calc(100vh - 80px);
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.activeApp {
+    position: relative;
+    border-left: 4px solid $color__button;
+}
+
+.activeApp::after {
+    content: "";
+    display: block;
+    border-right: 2px solid $color__button;
+    border-bottom: 2px solid $color__button;
+    width: 10px;
+    height: 10px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: calc(50% - 6px);
+    right: 20px;
+}
+a.app:hover {
+    position: relative;
+    border-left: 4px solid $color__header;
+}
+
+a.app:hover::after {
+    content: "";
+    display: block;
+    border-right: 2px solid $color__header;
+    border-bottom: 2px solid $color__header;
+    width: 10px;
+    height: 10px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: calc(50% - 6px);
+    right: 20px;
+}

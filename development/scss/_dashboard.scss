@@ -1,0 +1,149 @@
+.dashboard {
+    .row.widgetFirst {
+        display: flex;
+        justify-content: space-between;
+        height: 20vh;
+        margin-bottom: 5vh;
+
+        .addButton {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            color: $color__message--success;
+            border: 1px dashed $color__message--success;
+            background-color: $color__background;
+            font-weight: bold;
+
+            i {
+                font-size: 4rem;
+                margin-bottom: 15px;
+            }
+        }
+
+        .widgetStripes {
+            .widgetRecipes {
+                display: flex;
+                align-items: center;
+                border: 1px dashed $color__message--info;
+                background-color: $color__background;
+                padding: 5px;
+                color: $color__message--info;
+                font-size: 1.3rem;
+                position: relative;
+                margin-bottom: 11.5px;
+
+                p {
+                    margin-left: 10px;
+                }
+
+                .fa-window-close {
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                }
+            }
+
+            .widgetPlans {
+                display: flex;
+                align-items: center;
+                border: 1px dashed $color__massage--warning;
+                background-color: $color__background;
+                padding: 5px;
+                color: $color__massage--warning;
+                font-size: 1.3rem;
+                position: relative;
+                margin-bottom: 11.5px;
+
+                p {
+                    margin-left: 10px;
+                }
+
+                .fa-window-close {
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                }
+            }
+
+            .widgetHello {
+                display: flex;
+                align-items: center;
+                border: 1px dashed $color__message--success;
+                background-color: $color__background;
+                padding: 5px;
+                color: $color__message--success;
+                font-size: 1.3rem;
+                position: relative;
+
+                p {
+                    margin-left: 10px;
+                }
+
+                .fa-window-close {
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                }
+            }
+        }
+    }
+
+    .row.widgetWeekPlan {
+        text-align: center;
+        height: 53vh;
+        padding: 3vh;
+        border: 1px dashed $color__aside;
+        background-color: $color__background;
+
+        .yourPlanNumber {
+            color: $color__button;
+            font-size: 1.2rem;
+        }
+
+        .weekTable {
+            margin: 3vh 0;
+            color: $color__aside;
+
+            .tg {
+                border-collapse: collapse;
+                border-spacing: 0;
+                width: 100%;
+            }
+
+
+
+            .tg td {
+                padding: 7px 18px;
+                border-top: 1px solid $color__aside;
+                overflow-y: hidden;
+                word-break: break-all;
+                text-decoration: dashed;
+            }
+
+            .tg th {
+                padding: 10px 18px;
+                overflow: hidden;
+                word-break: normal;
+                border-top: 1px solid $color__aside;
+            }
+
+            .tg .tg-0lax {
+                text-align: left;
+                vertical-align: middle;
+                width: 14%;
+                font-size: 0.7rem;
+            }
+        }
+
+        .weekTableControls {
+            display: flex;
+            justify-content: space-between;
+            color: $color__button;
+
+            i {
+                margin: 0 5px;
+            }
+        }
+    }
+}

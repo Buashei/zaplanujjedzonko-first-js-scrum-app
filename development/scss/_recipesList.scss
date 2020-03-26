@@ -1,0 +1,105 @@
+.recipeList {
+    background-color: $color__background;
+    border: $color__aside 1px dashed;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    display: flex; // robimy na display none, ale jak będzie miało się pojawić to wpada flex i jest git!
+    flex-direction: column;
+    overflow-y: scroll;
+
+
+    .container {
+        .row {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: solid 1.5px $color__aside;
+            margin: 4px 0 4px 0;
+
+            p {
+                color: $color__button;
+            }
+
+            i {
+                font-size: x-large;
+                color: $color__message--success;
+            }
+        }
+    }
+
+    table {
+        thead {
+            .row {
+                color: $color__rowicon;
+                border-bottom: solid .5px $color__rowicon;
+                display: flex;
+                justify-content: space-between;
+
+            }
+
+            .tableHead {
+                display: flex;
+                justify-content: space-between;
+            }
+            .row.tableHead > th{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+        }
+
+        tbody {
+            .row {
+                font-size: small;
+                color: $color__rowicon;
+                border-bottom: solid .5px $color__rowicon;
+
+            }
+
+            .tableBody {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            tr.row.tableBody {
+                td {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+
+                    div {
+                        .far.fa-edit {
+                            color: $color__button;
+                            font-size: small;
+
+                        }
+
+                        .far.fa-trash-alt {
+                            color: $color__icon;
+                            font-size: small;
+                        }
+
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
+
+
+
+
+// .invisible {
+//     display: none;
+// }
+
+// .visible {
+//     display: flex;
+// }

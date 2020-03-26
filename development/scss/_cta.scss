@@ -1,0 +1,38 @@
+.cta{
+  background-color: $color__aside ;
+  .container{
+    background-color: $color__aside;
+    .row{
+      height: 200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .col-8{
+        display: flex;
+        color: $color__background;
+        flex-direction: column;
+
+        h3{
+          display: block;
+          font-size: 2.1rem;
+        }
+        p{
+          display: block;
+          font-size: 1.6rem;
+        }
+
+      }
+      .col-4{
+        display: flex;
+        justify-content: flex-end;
+        button{
+          a{
+            text-decoration: none;
+            color: $color__background;
+          }
+        }
+      }
+    }
+  }
+}
+

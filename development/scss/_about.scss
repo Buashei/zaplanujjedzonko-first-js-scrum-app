@@ -1,0 +1,28 @@
+.about {
+    background: $color__background;
+    height: 541px;
+    display: flex;
+    align-items: center;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about--placeholder {
+        width: 337px;
+        height: 353px;
+        background-color: $color__aside;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+
+    }
+}

@@ -1,0 +1,53 @@
+// CDN FONTAWESOME
+// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+//
+// Sass:
+// https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+@import 'reset';
+@import 'variables';
+@import 'grid';
+
+
+@import 'logo';
+@import 'header';
+@import 'carousel';
+@import 'cta';
+@import 'about--page';
+@import 'newsletter';
+@import 'about';
+@import 'contact';
+@import 'footer';
+@import 'app';
+@import 'mainWindow';
+@import 'newNameWindow';
+@import 'recipesList';
+@import 'recipes';
+@import 'newPlan';
+@import 'newplan1';
+<<<<<<< HEAD
+@import 'dashboard';
+=======
+@import 'schedules';
+>>>>>>> 57dbf5c7537c7df808b0946898bb2b48d4e1be24
+
+@import 'app--widgets';
+@import 'app--weeks';
+
+
+@import url('https://fonts.googleapis.com/css?family=Charmonman|Open+Sans:300,400,600,700,800&display=swap');
+
+body {
+  // background-color: #BADA55;
+  background-image: url(../images/background.png);
+  font-size: 14px;
+  font-family: 'Open Sans';
+}
+
+button {
+  height: 55px;
+  padding: 6px 40px;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  background-color: $color__button;
+}

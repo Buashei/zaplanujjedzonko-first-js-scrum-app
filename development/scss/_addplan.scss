@@ -1,0 +1,75 @@
+.newplan{
+    background-color: $color__background;
+    border: 1px dashed  $color__aside;
+    padding: 20px;
+    hr {
+        margin: 8px 0;
+        border: none;
+        border-top: 1px solid $color__aside;
+    }
+    input[name="planName"] {
+        margin-bottom: 5px;
+        width: 90.5%;
+        height: 2rem;
+        padding: 5px;
+    }
+    input[type="number"]{
+        width: 5%;
+        height: 2rem;
+        padding: 5px;
+    }
+    textarea {
+        resize: none;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        h3 {
+            text-transform: uppercase;
+            font-size: 2rem;
+            color: $color__button;
+        }
+        button {
+            height: 40px;
+            font-size: 0.7rem;
+        }
+    }
+    .row:nth-of-type(2), .row:nth-of-type(3), .row:nth-of-type(4){
+        label {
+            font-size: 1.2rem;
+            color: $color__aside;
+            margin-bottom: 10px;
+        }
+    }
+    .names {
+        display: flex;
+        align-items: center;
+        p{
+            font-size: 1rem;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+            color: $color__aside;
+        }
+    }
+    .days {
+        p{
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+            color: $color__aside;
+        }
+        .col-2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            select{
+                border-radius: 5px;
+                border-color: $color__aside;
+                color: $color__aside;
+                max-width: 70%;
+            }
+        }
+    }
+}

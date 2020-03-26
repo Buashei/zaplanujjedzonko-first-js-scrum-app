@@ -1,0 +1,177 @@
+.widgets {
+  height: 300px;
+  width: 100%;
+
+
+
+  .container {
+    height: 100%;
+    width: 100%;
+
+    .row {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+
+
+      .col-5 {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .widget--recipes {
+          height: 300px;
+          width: 300px;
+          background-color: $color__background;
+          border: 2px dotted $color__message--success;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          margin-right: 20px;
+
+          .fa-plus-square {
+            display: flex;
+            font-size: 180px;
+            color: $color__message--success;
+          }
+
+          p {
+            display: block;
+            color: $color__message--success;
+            font-size: 1.7rem;
+            font-weight: bold;
+          }
+        }
+
+        .widget--plan {
+          height: 300px;
+          width: 300px;
+          background-color: $color__background;
+          border: 2px dotted $color__message--success;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          margin-right: 20px;
+
+          .fa-plus-square {
+            display: flex;
+            font-size: 180px;
+            color: $color__message--success;
+          }
+
+          p {
+            display: block;
+            color: $color__message--success;
+            font-size: 1.7rem;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .col-7 {
+        height: 100%;
+        display: flex;
+        width: 100%;
+
+        .notification {
+          display: flex;
+          height: 100%;
+          width: 100%;
+          justify-content: space-between;
+          flex-direction: column;
+          font-size: 1.7rem;
+          font-weight: bold;
+
+          .info {
+            background-color: $color__background;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            color: $color__message--info;
+            border: 2px dotted $color__message--info;
+            padding: 5px;
+            justify-content: space-between;
+
+            .info1 {
+              display: flex;
+              align-items: center;
+
+              .fa-info-circle {
+                display: flex;
+                font-size: 3rem;
+                margin-right: 10px;
+              }
+
+              p {
+                display: flex;
+                font-size: 2rem;
+              }
+
+            }
+          }
+
+          .remember {
+            background-color: $color__background;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            color: $color__massage--warning;
+            border: 2px dotted $color__massage--warning;
+            padding: 5px;
+            justify-content: space-between;
+
+            .remember1 {
+              display: flex;
+              align-items: center;
+
+              .fa-exclamation-circle {
+                display: flex;
+                font-size: 3rem;
+                margin-right: 10px;
+              }
+
+              p {
+                display: flex;
+                font-size: 2rem;
+              }
+            }
+          }
+
+          .great {
+            background-color: $color__background;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            color: $color__message--success;
+            border: 2px dotted $color__message--success;
+            padding: 5px;
+            justify-content: space-between;
+
+            .great1 {
+              display: flex;
+              align-items: center;
+
+              .fa-check-circle {
+                display: flex;
+                font-size: 3rem;
+                margin-right: 10px;
+              }
+
+              p {
+                display: flex;
+                font-size: 2rem;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
