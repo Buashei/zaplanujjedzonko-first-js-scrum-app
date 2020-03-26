@@ -1,0 +1,1 @@
+# zaplanujjedzonko-first-js-scrum-app
